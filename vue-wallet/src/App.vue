@@ -1,0 +1,47 @@
+<template>
+  <div id="app">
+    <loading :show="isLoading" text="加载中"></loading>
+    <transition>
+      <keep-alive>      
+        <router-view></router-view>      
+      </keep-alive>
+    </transition>
+  </div>
+</template>
+
+<script>
+import { Loading } from 'vux'
+import { mapState } from 'vuex'
+
+export default {
+  components: {
+    Loading
+  },
+  computed: {
+    ...mapState({
+      isLoading: state => state.vux.isLoading
+    })
+  }
+}
+</script>
+<style type="stylus" scoped>
+  .weui-btn
+    border-radius: 0px
+</style>
+<style lang="less">
+  @import '~vux/src/styles/reset.less';
+  @import '~vux/src/styles/1px.less';
+  @import '~vux/src/styles/close.less';
+  @import 'common/style/fonts.css';
+
+  body {
+    background-color: #f4f4f4;
+  }
+  #app .vux-header .vux-header-left .left-arrow:before {
+    border: 2px solid #fff;
+    border-width: 2px 0 0 2px;
+  }
+  #app .weui-btn {
+    border-radius: 0px  
+  }
+</style>

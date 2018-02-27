@@ -1,0 +1,46 @@
+body{margin:0;padding:0;font-family:"微软雅黑";}
+body,html{-webkit-text-size-adjust:none;width:100%;height:100%;}
+*{text-decoration:none;list-style:none;}
+img{border:0px;}
+ul,li,dl,dd,dt,p,ol,h1,h2,h3,h4,h5{font-size:12px;font-weight:100;padding:0;margin:0;}
+.fl{float:left;}
+.fr{float:right;}
+.clr{clear:both;height:0px;width:100%;font-size:1px;line-height:0px;visibility:hidden;overflow:hidden;}
+*,:after,:before{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
+::-moz-focus-inner{border:0px;}
+a:link{color:#353535;text-decoration:none;}
+a:visited{color:#145ccd;text-decoration:none;}
+a:hover{color:#145ccd;text-decoration:underline;}
+a:active{color:#145ccd;text-decoration:underline;}
+a{-webkit-transition:all .4s cubic-bezier(.175,.885,.32,1);-o-transition:all .4s cubic-bezier(.175,.885,.32,1);transition:all .4s cubic-bezier(.175,.885,.32,1);}
+a:focus{outline:thin dotted #333;outline:5px auto -webkit-focus-ring-color;outline-offset:-2px}
+.wrapper{clear:both;width:100%;}
+/*默认滚动条样式修改ie9 google Firefox 等高版本浏览器有效*/::selection{background:#D03333;color:white;text-shadow:none;}
+::-webkit-scrollbar-track-piece{width:10px;background-color:#f2f2f2}
+::-webkit-scrollbar{width:10px;height:6px}
+::-webkit-scrollbar-thumb{height:50px;background-color:rgba(0,0,0,.3);}
+::-webkit-scrollbar-thumb:hover{background:#cc0000}
+#topbar{background:#ff6001;height:90px;position:fixed;top:0;left:0;width:100%;overflow:hidden;z-index:10;}
+#topbar .logo{font-size:32px;color:#fff;margin:20px 0 0 55px;float:left;}
+#topbar .person{float:right;margin:20px 20px 0 0;width:245px;color:#fff;text-align:center;font-size:18px;}
+#topbar .person .company{background:url(../images/logo.png) no-repeat;text-indent:20px;font-size:18px;height:30px;}
+#topbar .person p{font-size:16px;}
+.main{width:100%;margin-top:90px;overflow:hidden;}
+.side{width:210px;position:fixed;left:0;top:90px;background:rgba(51,51,51,0.2);margin-top:15px;min-height:calc(100% - 90px);border-radius:6px;}
+.side nav{background:#f6fafd}
+.aside{width:auto;margin:15px 15px 30px 225px;}
+.aside .shadow{box-shadow:3px 3px 3px rgba(203,229,244,.4),-3px -3px 3px rgba(203,229,244,.4);background:#fff;}
+.aside .title{background:#fff1e7;color:#fe5722;width:100%;text-indent:25px;height:50px;line-height:50px;}
+.aside .title span{border-left:3px solid #fe5722;padding-left:10px;font-size:18px;}
+
+
+
+
+
+
+
+
+
+
+
+
