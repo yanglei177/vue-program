@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import store from './store/'
 import FastClick from 'fastclick'
-import router from 'router'
+import router from './router/'
 
 import App from './App'
 

@@ -3,7 +3,7 @@ import store from '../store/'
 import Router from 'vue-router'
 
 const Home = (resolve) => {
-  import('views/Home').then((module) => {
+  import('../views/Home').then((module) => {
     resolve(module)
   })
 }
@@ -15,37 +15,33 @@ const router = new Router({
     {
       path: '/',
       name: 'home',
-      component: Home
-    }, {
-      path: '/person',
-      name: 'person',
-      component: Person,
+      component: Home,
       meta: { requireLogin: true }
     }
   ]
 })
 
-router.afterEach(function (to) {
-  setTimeout(function () {
-    store.commit('updateLoadingStatus', {isLoading: false})
-  }, 100)
-})
+// router.afterEach(function (to) {
+//   setTimeout(function () {
+//     store.commit('updateLoadingStatus', {isLoading: false})
+//   }, 100)
+// })
 
-router.beforeEach((to, from, next) => {
-  store.commit('updateLoadingStatus', {isLoading: true})
-  next()
-  if (to.meta.requireLogin) {
-    let wallettel = localStorage.getItem('wallettel')
-    if (wallettel) {
-      next()
-    } else {
-      next({
-        path: '/login'
-      })
-    }
-  } else {
-    next()
-  }
-})
+// router.beforeEach((to, from, next) => {
+//   store.commit('updateLoadingStatus', {isLoading: true})
+//   next()
+//   if (to.meta.requireLogin) {
+//     let wallettel = localStorage.getItem('wallettel')
+//     if (wallettel) {
+//       next()
+//     } else {
+//       next({
+//         path: '/login'
+//       })
+//     }
+//   } else {
+//     next()
+//   }
+// })
 
 export default router
