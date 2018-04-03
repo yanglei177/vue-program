@@ -29,8 +29,8 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
-@import '~@/common/scss/const.scss';
+<style lang="stylus" scoped>
+@import '~@/common/stylus/const.styl';
 
 .my-loading {
   width: 100%;

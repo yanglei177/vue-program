@@ -204,9 +204,9 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
-@import '~@/common/scss/const.scss';
-@import '~@/common/scss/mymixin.scss';
+<style lang="stylus" scoped>
+@import '~@/common/stylus/const.styl';
+@import '~@/common/stylus/mymixin.styl';
 
 .my-phone-list {
   position: relative;

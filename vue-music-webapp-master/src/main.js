@@ -6,7 +6,7 @@ import App from './App'
 import router from './router' // vue-router
 import store from './store' // vuex
 
-import '@/common/scss/index.scss'
+import '@/common/stylus/index.styl'
 
 // 移动端调试工具，在移动端输出日志
 /* eslint-disable no-unused-vars */
