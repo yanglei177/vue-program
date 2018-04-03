@@ -4,9 +4,11 @@ import FastClick from 'fastclick'
 import router from './router/'
 
 import App from './App'
+import "./common/style/index.styl";
 
 FastClick.attach(document.body)
 Vue.config.productionTip = false
+
 
 /* eslint-disable no-new */
 new Vue({

@@ -1,24 +1,25 @@
 <template>
   <div>
-    {{title}}
+    <toast></toast>
+    <loading></loading>
   </div>
 </template>
 
 <script>
+import toast from "components/toast"
+import loading from "components/loading"
 export default {
-  data () {
+  data() {
     return {
-      title: 'yjs'
-    }
+    };
   },
-  computed: { 
-  },
+  computed: {},
   components: {
+    toast,
+    loading
   },
-  methods: { 
-  }
-}
+  methods: {}
+};
 </script>
 <style lang="stylus" scoped>
-  
 </style>
